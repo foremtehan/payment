@@ -111,7 +111,7 @@
         {
             "type": "vcs",
             "url": "https://github.com/foremtehan/multipay"
-        },
+        }
     ],
     "scripts": {
         "test": "phpunit",
