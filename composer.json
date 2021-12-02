@@ -87,7 +87,7 @@
         "php": ">=7.2",
         "illuminate/broadcasting": "^5.0|^6.0|^7.0|^8.0",
         "illuminate/support": "^5.0|^6.0|^7.0|^8.0",
-        "shetabit/multipay": "^1.0"
+        "shetabit/multipay": "dev-develop"
     },
     "suggest": {
         "ext-soap": "Needed to support some drivers that required SOAP"
@@ -107,6 +107,12 @@
             "Shetabit\\Payment\\Tests\\": "tests"
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/foremtehan/multipay"
+        },
+    ],
     "scripts": {
         "test": "phpunit",
         "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
